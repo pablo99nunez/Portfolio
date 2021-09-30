@@ -8,22 +8,25 @@
 }
 
 body{
-    
+    overflow-x: hidden;
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .title{
-    align-items: center;
+    align-items: left;
+    font-size: 2rem;
+    padding-left: 5rem;
     justify-content: center;
     display: flex;
+    flex-direction: column;
     color:white;
     background: linear-gradient(45deg,var(--primary),transparent),
     repeating-linear-gradient(-45deg,var(--dark) 30px,var(--secondary) 60px, transparent, transparent 90px),
     repeating-linear-gradient(45deg,var(--dark) 30px,var(--secondary) 60px);
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-    text-align: center;
+    text-align: left;
 }
 .presentacion{
     position: relative;
@@ -32,6 +35,7 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+    z-index: 2;
 }
 .circle{
     height: 10rem;
@@ -40,4 +44,5 @@ body{
     transform: rotate(45deg);
     position: absolute;
     top:-5rem;
+    z-index: -1;
 }
