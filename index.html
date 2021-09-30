@@ -5,26 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e1778d5843.js" crossorigin="anonymous"></script>
+
     <title>Pablo Nuñez</title>
 </head>
 <body>
-  <main>
+    <main>
 
-      <div class="title">
-          <h1 id="t1">Soy</h1>
-        <h1 id="t2" class="textImportant">Pablo</h1>
-        <h1 id="t3" class="textImportant">Nuñez</h1>
-        
-    </div>
-    <section class="presentacion">
-        <div class="imagen">
-            <img src="./20210807_153710.jpg" alt="imagen mia">
+        <div class="title">
+            
+            <div class="link-container">
+                <h1 id="t1">Me llamo</h1>
+                <a href="#About"  class="link"><h1>Sobre mí</h1></a>
+            </div>
+            <div class="link-container">
+                <h1 id="t2" class="textImportant">Pablo</h1>
+                <a href="#Work" class="link "><h1 class="textImportant">Trabajos</h1></a>
+            </div>
+            <div class="link-container">
+                <h1 id="t3" class="textImportant">Nuñez</h1> 
+                <a href="#Contact" class="link"><h1 class="textImportant">Contacto</h1></a>  
+            </div>
+
         </div>
-        
-        <div class="circle"></div>
-        <h2>Soy estudiante de programacion</h2>
-    </section>
-</main>
-
+        <a name="About"></a>
+        <section class="presentacion">
+            <div class="square">
+                <a href="#About" class="Arrowdown"><i class="fas fa-arrow-down"></i></a>
+            </div>
+            <h1 id="About">Sobre mí</h1>
+            <div class="imagen">
+                <img src="./20210807_153710.jpg" alt="imagen mia">
+            </div>
+            <h2>Soy estudiante de programacion</h2>
+        </section>
+        <a name="Work"></a>
+        <section class="presentacion bg-primary">
+            <div class="square bg-primary">
+                <a href="#About" class="Arrowdown"><i class="fas fa-arrow-down"></i></a>
+            </div>
+            <h1 id="About">Sobre mí</h1>
+            <div class="imagen">
+                <img src="./20210807_153710.jpg" alt="imagen mia">
+            </div>
+            <h2>Soy estudiante de programacion</h2>
+        </section>
+    </main>
+    <script src="script.js"></script>
 </body>
 </html>
