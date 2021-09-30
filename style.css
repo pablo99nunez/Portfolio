@@ -7,7 +7,7 @@
     font-family: 'Merriweather',sans-serif;
 }
 
-body{
+main{
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
