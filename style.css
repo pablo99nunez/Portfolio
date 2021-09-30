@@ -46,3 +46,30 @@ body{
     top:-5rem;
     z-index: -1;
 }
+.textImportant{
+    color:var(--secondary);
+}
+#t1,#t2,#t3{
+    opacity: 0;
+}
+#t1{
+    animation: appear 500ms ease-in-out 1s forwards;
+}
+#t2{
+    animation: appear 500ms ease-in-out 1500ms forwards;
+}
+#t3{
+    animation: appear 500ms ease-in-out 2s forwards;
+}
+
+
+@keyframes appear {
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to{
+        opacity: 100;
+        transform: translateY(0);
+    }
+}
