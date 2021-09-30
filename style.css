@@ -87,13 +87,15 @@ main{
 }
 
 .imagen{
-    
+    opacity: 0;
     overflow: hidden;
     height: 50%;
     object-fit: scale-down;
     object-position: 50% 10%;
     transform-origin: top right;
     box-shadow: -8px 8px 0 0px var(--dark),-16px 16px 0 0px #778;
+    animation: fadein 1s linear both;
+    animation-timeline: scroller;
 }
 .imagen img{
     width: 100%;
@@ -143,7 +145,7 @@ main{
     }
     to{
         opacity: 100;
-        transform: translateX(60px);
+        transform: translateX(30px);
     }
 }
 
@@ -160,10 +162,12 @@ main{
 
 }
 @scroll-timeline scroller{
-    time-range:1s;
+    time-range:2s;
+ /*    start:selector(#main) start 0.2;
+    end: selector(#main) start 8; */
 }
-@keyframes Scroll {
+@keyframes fadein {
     to{
-        opacity: 0;
+        opacity: 100;
     }
 }
