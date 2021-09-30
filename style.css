@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 *{
     margin:0;
     --primary: #003F63;
     --dark:#353D40;
-    --secondary:#FF0005;
-    
+    --secondary:#F2B138;
+    font-family: 'Merriweather',sans-serif;
 }
 
 body{
