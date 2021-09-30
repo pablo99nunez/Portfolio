@@ -23,7 +23,7 @@ body{
     color:white;
     background: linear-gradient(45deg,var(--primary),transparent),
     repeating-linear-gradient(-45deg,var(--dark) 30px,var(--secondary) 60px, transparent, transparent 90px),
-    repeating-linear-gradient(45deg,var(--dark) 30px,var(--secondary) 60px);
+    repeating-linear-gradient(45deg,var(--dark) 30px,var(--secondary) 60px),url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSi6PTGFnrBb4bpigSPpwscVH7Q5RopZ5f94A&usqp=CAU');
     width: 100vw;
     height: 100vh;
     text-align: left;
