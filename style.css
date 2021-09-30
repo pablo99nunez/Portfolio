@@ -66,14 +66,14 @@ main{
     border-radius: 50%;
     overflow: hidden;
     position: absolute;
-    right: -8rem;
-    top:-8rem;
-    width: 40rem;
-    height: 40rem;
+    right: -8%;
+    top:-8%;
+    width: 40%;
+    height: 40%;
     object-fit: scale-down;
     object-position: 50% 10%;
     transform-origin: top right;
-    animation: imgAppear 2s ease-in-out  forwards;
+   
 }
 .imagen img{
     width: 100%;
@@ -91,15 +91,5 @@ main{
     to{
         opacity: 100;
         transform: translateY(0);
-    }
-}
-@keyframes imgAppear {
-    from{
-        opacity: 0;
-        transform: scale(0);
-    }
-    to{
-        opacity: 100;
-        transform: scale(1,1);
     }
 }
