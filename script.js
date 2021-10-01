@@ -14,12 +14,15 @@ $(".Arrowdown, .link").on("click",function(e){
     $("html, body").animate({scrollTop: $(href).offset().top},1000)
     
 })
-$( document ).on( "mousemove", function( event ) {
-   
-    pos=(event.pageX-window.innerWidth/2)/(window.innerWidth/2)
-    
-    track.style.transform="translateX("+(pos*(cantIco*10))+"rem)" 
-});
+function trackmovement(){
+
+    $( document ).on( "mousemove", function( event ) {
+        
+        pos=(event.pageX-window.innerWidth/2)/(window.innerWidth/2)
+        
+        track.style.transform="translateX("+(pos*(cantIco*10))+"rem)" 
+    });
+}
 
 $(document).on("scroll", function (e) {
     titulos.forEach((e) => {
@@ -48,6 +51,7 @@ function menu(x) {
                 linkC.children[1].classList.add("disable");
             })
         })
+        trackmovement();
     }else{
         const tap  =document.querySelector(".tap");
         tap.classList.toggle("disable")
