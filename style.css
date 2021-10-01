@@ -5,6 +5,7 @@
     --dark:#353D40;
     --secondary:#F2B138;
     font-family: 'Merriweather',sans-serif;
+    --tamanoImg: 25rem;
 }
 a{
     text-decoration: none;
@@ -44,6 +45,11 @@ main{
 }
 .large{
     font-size:2rem;
+    min-height: 20%;
+}
+.appear{
+    animation: appear 500ms ease-in forwards;
+
 }
 .flex-col{
     display: flex;
@@ -51,7 +57,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 60%;
+    
 }
 .flex{
     display:flex;
@@ -123,6 +129,7 @@ h2{
     opacity: 0;
     overflow: hidden;
     max-width: 30%;
+    max-height: 70%;
     object-fit: scale-down;
     box-shadow: -8px 8px 0 0px var(--dark),-16px 16px 0 0px #778;
     animation: fadein 1s linear both;
@@ -151,6 +158,28 @@ h2{
     width: fit-content;
 }
 
+#track img{
+    
+    width: var(--tamanoImg);
+}
+
+.carrousel{
+    width: 75%;
+    background:linear-gradient(90deg, var(--primary), transparent , var(--primary));
+   
+    overflow: hidden;
+}
+#track{
+    flex-wrap: nowrap;
+    display:flex;
+    z-index:-1;
+}
+.flex-col{
+    width:100%;
+    justify-self: center;
+}
+
+
 .bg-primary{
     background-color: var(--primary);
     color:white;
@@ -162,7 +191,7 @@ h2{
     display:none;
 }
 .invisible{
-    color:transparent;
+    opacity:0;
 }
 
 @keyframes appear {
@@ -226,11 +255,7 @@ h2{
     }
 }
 
-@media (max-width:500px){
-    .image{
-       
-    }
-}
+
 
 @media (max-width:500px){
 
@@ -248,11 +273,13 @@ h2{
     .flex{
         flex-direction: column;
         height: 60%;
+        justify-content: space-around;
+        align-items: left;
     }
-    .image{
-        min-width:90%;
-        min-height: 60%;
-        
+    .imagen{
+        min-height: 80%;
+        object-fit:fill;
+        box-shadow: 0 0 0 transparent;
     }
     .square{
       
@@ -262,5 +289,22 @@ h2{
         height: var(--size);
         top: calc(var(--size)/2*-1);
         left:calc(50% - (var(--size)/2));
+    }
+    .link-container:hover #t1,
+.link-container:hover #t2,
+.link-container:hover #t3{
+    color:currentColor;
+    
+}
+    .carrousel{
+        flex-direction: column;
+        /* outline :1px solid red; */
+        min-height: 90%;
+    }
+    #track{
+        display:flex;
+        outline:1px solid yellow;
+        width: 100%;
+        height: 100%;
     }
 }

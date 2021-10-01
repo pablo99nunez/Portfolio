@@ -13,7 +13,7 @@
     
     <main>
 
-        <p class="tap disable">Tap anywhere</p>
+        <p class="tap disable">Presiona en cualquier lado</p>
         <div class="title" id="main">
             <div class="link-container">
                 <h1 id="t1">Me llamo</h1>
@@ -35,15 +35,19 @@
 
                 <a href="#About" class="Arrowdown"><i class="fas fa-arrow-down"></i></a>
             </div>
-                <div class="flex-col">
+            <div class="flex-col">
+                <div class="large">
 
-                <h1 class="large">Sobre mí</h1>
+                    <h1 class="disable appear">Sobre mí</h1>
+                </div>
                 <div class="flex">
                     
                 <div class="imagen">
                     <img src="./20210807_153710.jpg" alt="imagen mia">
                 </div>
-                <h2>Soy estudiante de programacion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore architecto vitae eum autem ut eveniet libero quaerat repudiandae accusantium molestias. Similique perspiciatis neque voluptatum cumque quia ut provident, odit dignissimos.</h2>
+               
+                <h2 id="info" class="invisible">Soy estudiante de programacion. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore architecto vitae eum autem ut eveniet libero quaerat repudiandae accusantium molestias. Similique perspiciatis neque voluptatum cumque quia ut provident, odit dignissimos.</h2>
+                
             </div>
             
         </div>
@@ -53,10 +57,27 @@
             <div class="square bg-primary">
                 <a href="#Work" class="Arrowdown"><i class="bg-primary fas fa-arrow-down"></i></a>
             </div>
+            <div class="flex-col">
+                <div class="large">
+
+                    <h1 class="disable appear">Conocimientos</h1>
+                </div>
+                
+                <div class="flex carrousel">
+                    <div id="track" >
+
+                        <img src="./icons/kisspng-java-runtime-environment-computer-icons-java-platf-java-5ade3063f31610.0948145615245108199957.png" alt="java" />
+                        <img src="./icons/kisspng-javascript-portable-network-graphics-logo-clip-art-javascript-programs-amp-output-apps-on-google-5b69409b183213.5468079715336244750991.png" alt="js" />
+                        <img src="./icons/kisspng-responsive-web-design-html-computer-icons-css3-wor-css-5ada2556b56739.2541863015242458467431.png" alt="hmtl" />
+                        <img src="./icons/kisspng-web-development-cascading-style-sheets-css3-comput-css-5ada20be5eed10.7390827615242446703888.png" alt="css" />
+                </div>
+                </div>
+            </div>
             
         </section>
     </main>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
+    <script src="carrousel.js"></script>
 </body>
 </html>
