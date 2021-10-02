@@ -39,7 +39,7 @@ main{
     display:flex;
     height: 100vh;
     width: 100%;
-    
+   
     z-index: 2;
     position: relative;
 }
@@ -57,10 +57,12 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    
+    margin:2rem;
 }
 .flex{
     display:flex;
+    flex-wrap: wrap;
+    
     flex-direction: row;
     width: 100%;
     margin:2rem;
@@ -164,7 +166,7 @@ h2{
 
 
 #track img{
-   
+    max-height: 20rem;
     width: var(--tamanoImg);
 }
 .background{
@@ -177,21 +179,53 @@ h2{
 }
 .carrousel{
     width: 75%;
-    
     margin:2rem;
     overflow: hidden;
     position:relative;
 }
 #track{
+    max-height: 40%;
     flex-wrap: nowrap;
     display:flex;
     z-index: -1;
 }
+.card{
+    width:30rem;
+    height: 20rem;
+    background-color: #ddd;
+    
+    box-shadow: 5px 5px 5px 0 #333;
+    transition: all 400ms ease-in-out;
+    margin:20px;
+    overflow:hidden;
+    position:relative;
+}
+.card:hover{
+    transform:scale(1.1);
+    box-shadow: 5px 5px 15px 0 black;
+
+}
+.card-info{
+    position:absolute;
+    bottom: 0;
+    height: 30%;
+    background-color: var(--primary);
+    width: 100%;
+}
+
+
+.bg-black{
+    color:white;
+    background-color: black;
+}
+
 .flex-col{
     width:100%;
     justify-self: center;
 }
-
+.color-primary{
+    color:var(--primary)
+}
 
 .bg-primary{
     background-color: var(--primary);
@@ -294,10 +328,21 @@ h2{
         justify-content: space-around;
         align-items: left;
     }
+    
     .imagen{
-        min-height: 80%;
-        object-fit:fill;
+        position:absolute;
+        z-index: -1;
+        top:0;
+        left:0;
+        min-width: 100vw;
+        min-height: 100vh;
         box-shadow: 0 0 0 transparent;
+    }
+    .imagen img{
+        object-fit:cover;
+        width: 100vw;
+        height: 100vh;
+        opacity:.2;
     }
     .square{
       
