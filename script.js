@@ -47,9 +47,11 @@ function menu(x) {
             linkC.addEventListener("mouseenter", () => {
                 linkC.children[1].classList.remove("disable");
             })
+            
             linkC.addEventListener("mouseleave", () => {
                 linkC.children[1].classList.add("disable");
             })
+            
         })
         trackmovement();
     }else{
@@ -61,12 +63,19 @@ function menu(x) {
         document.addEventListener("click",()=>{
             tap.classList.add("disable");
             linkCont.forEach((linkC) => {
-                
+               
                 linkC.children[1].classList.toggle("disable");
-                linkC.children[0].classList.toggle("invisible")
+                linkC.children[0].classList.toggle("disable")
                 
             })
                 
+        })
+        document.addEventListener("touchmove",()=>{
+            
+            linkCont.forEach((linkC) => {
+               
+            } )
+            
         })
     }
 }
