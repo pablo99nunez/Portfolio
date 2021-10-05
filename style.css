@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
 *{
     margin:0;
+    padding:0;
     --primary: #003F63;
     --dark:#353D40;
     --secondary:#F2B138;
@@ -57,7 +58,29 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    margin:2rem;
+    margin-top:5rem ;
+    margin-bottom: 5rem;
+    
+}
+form{
+    display:flex;
+    flex-direction: column;
+
+}
+a h2{
+    color:white;
+}
+.red{
+    display:flex;
+    align-items: center;
+    margin:1rem;
+    object-fit:scale-down;
+}
+.red img{
+
+    width: 2rem;
+    
+    
 }
 .flex{
     display:flex;
@@ -73,14 +96,14 @@ main{
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
-    height: 10rem;
-    width: 10rem;
+    font-size: 1.5rem;
+    height: 5rem;
+    width: 5rem;
     background-color: white;
     transform: rotate(45deg);
     position: absolute;
-    top:-5rem;
-    left:calc(50% - 5rem);
+    top:-2.5rem;
+    left:calc(50% - 2.5rem);
     
     z-index: -1;
 }
@@ -190,15 +213,17 @@ h2{
     z-index: -1;
 }
 .card{
-    width:30rem;
-    height: 20rem;
+    width:15rem;
+    height:10rem;
     background-color: #ddd;
-    
+    object-fit: scale-down;
+    object-position:20% 10%;
     box-shadow: 5px 5px 5px 0 #333;
     transition: all 400ms ease-in-out;
     margin:20px;
     overflow:hidden;
     position:relative;
+    cursor:pointer;
 }
 .card:hover{
     transform:scale(1.1);
@@ -211,6 +236,14 @@ h2{
     height: 30%;
     background-color: var(--primary);
     width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color:white
+}
+
+.card img{
+    width:15rem;
 }
 
 
