@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature conversor</title>
+    <script src="https://kit.fontawesome.com/e1778d5843.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <main>
+        <div class="cont">
+            <p>Degrees</p>
+            <input  class="input" value="0" type="text" name="degrees" id="degrees">
+        </div>
+        <div class="cont">
+            <p>Type</p>
+            <div class="temp">
+
+                <select class="input"  name="temp" id="temp">
+                    <option value="C">Celsius</option>
+                    <option value="F">Fahrenheit</option>
+                    <option value="K">Kelvin</option>
+                </select>
+                <i class="fas fa-caret-up" id="Arrow" ></i>
+            </div>
+
+        </div>
+        <div class="cont">
+            <p class="invisible">a</p>
+            <button id="convert">Convert</button>
+        </div>
+        <div class="cont">
+            <p>Result</p>
+            <h1 id="result"></h1>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
