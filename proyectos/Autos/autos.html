@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://kit.fontawesome.com/e1778d5843.js" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Urbanist&display=swap" rel="stylesheet"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autos</title>
+</head>
+<body>
+    <main>
+        <form class="" id="form" method="GET" action="index.html">
+            <div class="cont-marcas">
+
+                <h2>Seleccione una marca</h2>
+                    <select name="marcas" id="marcas" >
+                    <option value="Renault">Renault</option>
+                    <option value="Volkswagen">Volkswagen</option>
+                    <option value="Fiat">Fiat</option>
+                    <option value="Chevrolet">Chevrolet</option>
+                    <option value="BMW">BMW</option>
+                </select>
+            </div>
+            <div class="cont-pago">
+                <h2>Seleccione una forma de pago</h2>
+                <div class="row-spacearound">
+                    <div>
+                        <input checked id="efec" type="radio" name="pago" value="Efectivo">
+                        <label for="Efectivo">Efectivo</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pago" value="Tarjeta de credito">
+                        <label for="Tarjeta de credito">Tarjeta de credito</label>
+                    </div>
+                    <div>
+                        <input type="radio" name="pago" value="Cheque">
+                        <label for="Cheque">Cheque</label>
+                    </div>
+                    <div class="cont-desc">
+                        
+                        <label for="desc"><input type="checkbox" name="desc" id="desc" autocomplete="off">Descuento</label>
+                        <input type="text" value="20" name="descuento" id="descnum">
+                    </div>
+                </div>
+            </div>
+
+            <input type="submit" value="Enviar" id="btn">
+        </form>
+        <div class="result disable" id="result">
+            <h2>Has seleccionado: </h2>
+            <h1 id="marca"></h1>
+            <h2>Tu forma de pago sera: </h2>
+            <h1 id="pago"></h1>
+            
+                
+            <h2>Precio: </h2>
+            <h1 id="precio"></h1>
+            
+            <div id="conDescuento" class="disable">
+                <h2>Descuento: </h2>
+                <h1 id="descuento"></h1>
+                <h2>Total</h2>
+                <h1 id="total"></h1>
+            </div>
+
+            
+        </div>
+
+    </main>
+    <a id="backbutton" class="disable" href="./index.html"><i class="fas fa-arrow-left"></i></a>
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    text-decoration: none;
+    font-family: 'Urbanist', sans-serif;
+    --red: #D90B1C;
+    --yellow: #FAF566;
+    --light: #9ACFDD;
+    --white: #CABAAB;
+    --black: #202731;
+}
+
+
+
+
+body{
+    display:flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--yellow);
+}
+main{
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 100%;
+    border-radius: 10px;
+    height: 60%;
+    background-color: var(--light);
+    display: flex;
+    justify-content: space-around;
+    padding:15px;
+    flex-direction: column;
+    box-shadow: 0px 2px 5px 1px black;    
+    
+}
+.cont-marcas{
+    margin-bottom: 15px;
+}
+
+
+select{
+    width: 100%;
+    background-color: #202731;
+    color:var(--white);
+    border:none;
+    
+    font-size: 1.2rem;
+    border-radius: 10px;
+    padding:5px;
+    cursor: pointer;
+    
+}
+
+.cont-pago{
+    display: flex;
+    flex-direction: column;
+    
+}
+.row-spacearound{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#btn{
+    justify-self: end;
+    align-self: center;
+    border:0;
+    color:var(--white);
+    font-size: 1.3rem;
+    border-radius: 10px;
+    background-color: #5B24AD;
+    min-width: 50%;
+    transition: transform 200ms ease-in-out;
+    cursor:pointer;
+}
+#btn:hover{
+    transform:scale(1.1);
+}
+a{
+    position: absolute;
+    top:0;
+    left:0;
+    margin:10px;
+    
+}
+i{
+    color:var(--black);
+    font-size: 1.3rem;
+}
+.cont-desc{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+#descnum{
+    border:0;
+    text-align: right;
+    width: 100px;
+    position: absolute;
+    top:20px;
+    opacity: 0;
+}
+.appear{
+
+    animation: appear 300ms ease-in-out both ;
+}
+@keyframes appear {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity: 100;
+    }
+    
+}
+
+h2{
+    color:var(--black);
+    margin: 3px 0;
+}
+
+.disable{
+    display: none;
+}
